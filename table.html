@@ -32,11 +32,15 @@
                 <input type="checkbox" name="oy" id="oy_num_of_artists" value="num_of_artists">Количество исполнителей
             </form>
 
-            <p>
-                <form>
-                    <input type="submit" value="Построить">
-                </form>
-            </p>
+            
+            <form>
+                <p>
+                    <label>
+                        <input type="submit" value="Построить">
+                    </label>
+                </p>
+            </form>
+            
             
             Здесь будет график
             
@@ -89,11 +93,15 @@
                 </p>
             </form>
 
-            <p>
-                <form>
-                    <input type="submit" value="Найти">
-                </form>
-            </p>
+            
+            <form>
+                <p>
+                    <label>
+                        <input type="submit" value="Найти">
+                    </label>
+                </p>
+            </form>
+            
         </details>
 
         <br>
@@ -101,66 +109,68 @@
         <details open="open">
             <summary>Сортировка</summary>
 
-            <p>
-                <form>
-                    <label>Первый уровень:
-                        <select name="filter">
-                            <option value="0">Нет</option>
-                            <option value="1">Исполнитель</option>
-                            <option value="2">Жанр</option>
-                            <option value="3">Страна</option>
-                            <option value="4">Год начала карьеры</option>
-                            <option value="5">Количество альбомов</option>
-                            <option value="6">Слушателей в месяц</option>
-                        </select>
+            <form>
+                <p>
+                <label>Первый уровень:
+                    <select name="filter">
+                        <option value="0">Нет</option>
+                        <option value="1">Исполнитель</option>
+                        <option value="2">Жанр</option>
+                        <option value="3">Страна</option>
+                        <option value="4">Год начала карьеры</option>
+                        <option value="5">Количество альбомов</option>
+                        <option value="6">Слушателей в месяц</option>
+                    </select>
+                </label>
+                <label>по убыванию?
+                    <input type="checkbox" name="decrease" value="7">
+                </label>
+                </p>
+            </form>
+            
+            <form>
+                <label>Второй уровень:
+                    <select name="filter">                            
+                        <option value="0">Нет</option>
+                        <option value="1">Исполнитель</option>
+                        <option value="2">Жанр</option>
+                        <option value="3">Страна</option>
+                        <option value="4">Год начала карьеры</option>
+                        <option value="5">Количество альбомов</option>
+                        <option value="6">Слушателей в месяц</option>
+                    </select>
+                </label>
+                <label>по убыванию?
+                    <input type="checkbox" name="decrease" value="7">
+                </label>
+            </form>
+            
+            <form>
+                <p>
+                <label>Третий уровень:
+                    <select name="filter">
+                        <option value="0">Нет</option>
+                        <option value="1">Исполнитель</option>
+                        <option value="2">Жанр</option>
+                        <option value="3">Страна</option>
+                        <option value="4">Год начала карьеры</option>
+                        <option value="5">Количество альбомов</option>
+                        <option value="6">Слушателей в месяц</option>
+                    </select>
+                </label>
+                <label>по убыванию?
+                    <input type="checkbox" name="decrease" value="7">
+                </label>
+                </p>
+            </form>
+            <form>
+                <p>
+                    <label>
+                        <input type="submit" value="Сортировать">
                     </label>
-                    <label>по убыванию?
-                        <input type="checkbox" name="decrease" value="7">
-                    </label>
-                </form>
-            </p>
-            <p>
-                <form>
-                    <label>Второй уровень:
-                        <select name="filter">
-                            <option value="0">Нет</option>
-                            <option value="1">Исполнитель</option>
-                            <option value="2">Жанр</option>
-                            <option value="3">Страна</option>
-                            <option value="4">Год начала карьеры</option>
-                            <option value="5">Количество альбомов</option>
-                            <option value="6">Слушателей в месяц</option>
-                        </select>
-                    </label>
-                    <label>по убыванию?
-                        <input type="checkbox" name="decrease" value="7">
-                    </label>
-                </form>
-            </p>
-            <p>
-                <form>
-                    <label>Третий уровень:
-                        <select name="filter">
-                            <option value="0">Нет</option>
-                            <option value="1">Исполнитель</option>
-                            <option value="2">Жанр</option>
-                            <option value="3">Страна</option>
-                            <option value="4">Год начала карьеры</option>
-                            <option value="5">Количество альбомов</option>
-                            <option value="6">Слушателей в месяц</option>
-                        </select>
-                    </label>
-                    <label>по убыванию?
-                        <input type="checkbox" name="decrease" value="7">
-                    </label>
-                </form>
-            </p>
-
-            <p>
-                <form>
-                    <input type="submit" value="Сортировать">
-                </form>
-            </p>
+                </p>
+            </form>
+            
         </details>
 
         <br>
