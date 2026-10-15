@@ -17,30 +17,39 @@
 
             <form>
                 <h4>Значения по оси OX</h4>
-    
-                <input type="radio" name="ox" id="ox_genre" value="genre">Жанр<br>
-                <input type="radio" name="ox" id="ox_country" value="country">Страна<br>
-                <input type="radio" name="ox" id="ox_year" value="year">Год начала карьеры
-                
+
+                <label>
+                    <input type="radio" name="ox" id="ox_genre" value="genre">Жанр<br>
+                </label>
+                <label>
+                    <input type="radio" name="ox" id="ox_country" value="country">Страна<br>
+                </label>
+                <label>
+                    <input type="radio" name="ox" id="ox_year" value="year">Год начала карьеры
+                </label>
             </form>
 
             <form>
                 <h4>Значения по оси OY</h4>
-
-                <input type="checkbox" name="oy" id="oy_max_listeners" value="max_listeners">Максимальное количество слушателей<br>
-                <input type="checkbox" name="oy" id="oy_min_listeners" value="min_listeners">Минимальное количество слушателей<br>
-                <input type="checkbox" name="oy" id="oy_num_of_artists" value="num_of_artists">Количество исполнителей
+                
+                <label>
+                    <input type="checkbox" name="oy" id="oy_max_listeners" value="max_listeners">Максимальное количество слушателей<br>
+                </label>
+                <label>
+                    <input type="checkbox" name="oy" id="oy_min_listeners" value="min_listeners">Минимальное количество слушателей<br>
+                </label>
+                <label>
+                    <input type="checkbox" name="oy" id="oy_num_of_artists" value="num_of_artists">Среднее количество слушателей
+                </label>
             </form>
-
             
             <form>
                 <p>
                     <label>
-                        <input type="submit" value="Построить">
+                        <input type="buttom" value="Построить">
                     </label>
                 </p>
             </form>
-            
             
             Здесь будет график
             
@@ -85,10 +94,10 @@
                 </p>
                 <p>
                     <label>Слушателей в месяц: от
-                        <input type="number" min="0">
+                        <input type="number" min="100000">
                     </label>
                     <label>до
-                        <input type="number" max="9999999999">
+                        <input type="number" max="100000000">
                     </label>
                 </p>
             </form>
@@ -97,7 +106,7 @@
             <form>
                 <p>
                     <label>
-                        <input type="submit" value="Найти">
+                        <input type="buttom" value="Найти">
                     </label>
                 </p>
             </form>
@@ -112,7 +121,7 @@
             <form>
                 <p>
                 <label>Первый уровень:
-                    <select name="filter">
+                    <select name="filter_1" id="filter_1">
                         <option value="0">Нет</option>
                         <option value="1">Исполнитель</option>
                         <option value="2">Жанр</option>
@@ -130,7 +139,7 @@
             
             <form>
                 <label>Второй уровень:
-                    <select name="filter">                            
+                    <select name="filter_2" id="filter_2">                            
                         <option value="0">Нет</option>
                         <option value="1">Исполнитель</option>
                         <option value="2">Жанр</option>
@@ -148,7 +157,7 @@
             <form>
                 <p>
                 <label>Третий уровень:
-                    <select name="filter">
+                    <select name="filter_3" id="filter_3">
                         <option value="0">Нет</option>
                         <option value="1">Исполнитель</option>
                         <option value="2">Жанр</option>
@@ -166,7 +175,7 @@
             <form>
                 <p>
                     <label>
-                        <input type="submit" value="Сортировать">
+                        <input type="buttom" value="Сортировать">
                     </label>
                 </p>
             </form>
@@ -176,471 +185,475 @@
         <br>
 
         <table border="1" cellspacing="0" cellpadding="5" width="80%">
-            <tr>
-                <th>Исполнитель</th>
-                <th>Жанр</th>
-                <th>Страна</th>
-                <th>Год начала карьеры</th>
-                <th>Количество альбомов</th>
-                <th>Слушателей в месяц</th>
-            </tr>
-            <tr>
-                <td>Charli XCX</td>
-                <td>Поп</td>
-                <td>Великобритания</td>
-                <td>2008</td>
-                <td>13</td>
-                <td>29551970</td>
-            </tr>
-            <tr>
-                <td>Malcolm Todd</td>
-                <td>R&B</td>
-                <td>США</td>
-                <td>2022</td>
-                <td>3</td>
-                <td>40353512</td>
-            </tr>
-            <tr>
-                <td>Bad Bunny</td>
-                <td>Латиноамериканская музыка</td>
-                <td>Пуэрто-Рико</td>
-                <td>2016</td>
-                <td>6</td>
-                <td>92653253</td>
-            </tr>
-            <tr>
-                <td>Michael Jackson</td>
-                <td>Поп</td>
-                <td>США</td>
-                <td>1971</td>
-                <td>10</td>
-                <td>87050962</td>
-            </tr>
-            <tr>
-                <td>The Neighbourhood</td>
-                <td>Рок</td>
-                <td>США</td>
-                <td>2011</td>
-                <td>6</td>
-                <td>49970161</td>
-            </tr>
-            <tr>
-                <td>Twenty One Pilots</td>
-                <td>Рок</td>
-                <td>США</td>
-                <td>2009</td>
-                <td>8</td>
-                <td>39187598</td>
-            </tr>
-            <tr>
-                <td>ADÉLA</td>
-                <td>Поп</td>
-                <td>Словакия</td>
-                <td>2025</td>
-                <td>2</td>
-                <td>35911145</td>
-            </tr>
-            <tr>
-                <td>Lana Del Rey</td>
-                <td>Поп</td>
-                <td>США</td>
-                <td>2005</td>
-                <td>8</td>
-                <td>67349162</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Исполнитель</th>
+                    <th>Жанр</th>
+                    <th>Страна</th>
+                    <th>Год начала карьеры</th>
+                    <th>Количество альбомов</th>
+                    <th>Слушателей в месяц</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Charli XCX</td>
+                    <td>Поп</td>
+                    <td>Великобритания</td>
+                    <td>2008</td>
+                    <td>13</td>
+                    <td>29551970</td>
+                </tr>
+                <tr>
+                    <td>Malcolm Todd</td>
+                    <td>R&B</td>
+                    <td>США</td>
+                    <td>2022</td>
+                    <td>3</td>
+                    <td>40353512</td>
+                </tr>
+                <tr>
+                    <td>Bad Bunny</td>
+                    <td>Латиноамериканская музыка</td>
+                    <td>Пуэрто-Рико</td>
+                    <td>2016</td>
+                    <td>6</td>
+                    <td>92653253</td>
+                </tr>
+                <tr>
+                    <td>Michael Jackson</td>
+                    <td>Поп</td>
+                    <td>США</td>
+                    <td>1971</td>
+                    <td>10</td>
+                    <td>87050962</td>
+                </tr>
+                <tr>
+                    <td>The Neighbourhood</td>
+                    <td>Рок</td>
+                    <td>США</td>
+                    <td>2011</td>
+                    <td>6</td>
+                    <td>49970161</td>
+                </tr>
+                <tr>
+                    <td>Twenty One Pilots</td>
+                    <td>Рок</td>
+                    <td>США</td>
+                    <td>2009</td>
+                    <td>8</td>
+                    <td>39187598</td>
+                </tr>
+                <tr>
+                    <td>ADÉLA</td>
+                    <td>Поп</td>
+                    <td>Словакия</td>
+                    <td>2025</td>
+                    <td>2</td>
+                    <td>35911145</td>
+                </tr>
+                <tr>
+                    <td>Lana Del Rey</td>
+                    <td>Поп</td>
+                    <td>США</td>
+                    <td>2005</td>
+                    <td>8</td>
+                    <td>67349162</td>
+                </tr>
 
-            <tr>
-                <td>Chappell Roan</td>
-                <td>Поп</td>
-                <td>США</td>
-                <td>2017</td>
-                <td>1</td>
-                <td>31466139</td>
-            </tr>
-            <tr>
-                <td>PinkPantheress</td>
-                <td>Электронная музыка</td>
-                <td>Великобритания</td>
-                <td>2021</td>
-                <td>6</td>
-                <td>31492623</td>
-            </tr>
-            <tr>
-                <td>TV Girl</td>
-                <td>Поп</td>
-                <td>США</td>
-                <td>2010</td>
-                <td>5</td>
-                <td>25544765</td>
-            </tr>
-            <tr>
-                <td>Tame Impala</td>
-                <td>Рок</td>
-                <td>Австралия</td>
-                <td>2007</td>
-                <td>5</td>
-                <td>60614071</td>
-            </tr>
-            <tr>
-                <td>Bon Jovi</td>
-                <td>Рок</td>
-                <td>США</td>
-                <td>1983</td>
-                <td>16</td>
-                <td>36276846</td>
-            </tr>
-            <tr>
-                <td>Billy Joel</td>
-                <td>Поп</td>
-                <td>США</td>
-                <td>1971</td>
-                <td>13</td>
-                <td>34085331</td>
-            </tr>
-            <tr>
-                <td>Kendrick Lamar</td>
-                <td>Хип-хоп</td>
-                <td>США</td>
-                <td>2003</td>
-                <td>11</td>
-                <td>70651187</td>
-            </tr>
-            <tr>
-                <td>Сергей Лазарев</td>
-                <td>Поп</td>
-                <td>Россия</td>
-                <td>2000</td>
-                <td>12</td>
-                <td>422556</td>
-            </tr>
-            <tr>
-                <td>Дима Билан</td>
-                <td>Поп</td>
-                <td>Россия</td>
-                <td>2000</td>
-                <td>12</td>
-                <td>706295</td>
-            </tr>
-            <tr>
-                <td>aespa</td>
-                <td>Поп</td>
-                <td>Южная Корея</td>
-                <td>2020</td>
-                <td>2</td>
-                <td>10611217</td>
-            </tr>
-            <tr>
-                <td>TWICE</td>
-                <td>Поп</td>
-                <td>Южная Корея</td>
-                <td>2015</td>
-                <td>10</td>
-                <td>14848813</td>
-            </tr>
-            <tr>
-                <td>Gesaffelstein</td>
-                <td>Электронная музыка</td>
-                <td>Франция</td>
-                <td>2008</td>
-                <td>3</td>
-                <td>14348436</td>
-            </tr>
-            <tr>
-                <td>Olivia Rodrigo</td>
-                <td>Поп</td>
-                <td>США</td>
-                <td>2021</td>
-                <td>3</td>
-                <td>67530037</td>
-            </tr>
-            <tr>
-                <td>Градусы</td>
-                <td>Поп</td>
-                <td>Россия</td>
-                <td>2008</td>
-                <td>3</td>
-                <td>751303</td>
-            </tr>
-            <tr>
-                <td>IOWA</td>
-                <td>Поп</td>
-                <td>Беларусь</td>
-                <td>2009</td>
-                <td>2</td>
-                <td>796549</td>
-            </tr>
-            <tr>
-                <td>Green Apelsin</td>
-                <td>Поп</td>
-                <td>Россия</td>
-                <td>2020</td>
-                <td>2</td>
-                <td>111809</td>
-            </tr>
-            <tr>
-                <td>Король и Шут</td>
-                <td>Рок</td>
-                <td>Россия</td>
-                <td>1988</td>
-                <td>12</td>
-                <td>541758</td>
-            </tr>
-            <tr>
-                <td>SALUKI</td>
-                <td>Хип-хоп</td>
-                <td>Россия</td>
-                <td>2013</td>
-                <td>5</td>
-                <td>481036</td>
-            </tr>
-            <tr>
-                <td>Сироткин</td>
-                <td>Рок</td>
-                <td>Россия</td>
-                <td>2015</td>
-                <td>2</td>
-                <td>939126</td>
-            </tr>
-            <tr>
-                <td>Zoloto</td>
-                <td>Поп</td>
-                <td>Россия</td>
-                <td>2016</td>
-                <td>6</td>
-                <td>230647</td>
-            </tr>
-            <tr>
-                <td>Где Фантом?</td>
-                <td>Рок</td>
-                <td>Россия</td>
-                <td>2019</td>
-                <td>3</td>
-                <td>287273</td>
-            </tr>
-            <tr>
-                <td>Red Hot Chili Peppers</td>
-                <td>Рок</td>
-                <td>США</td>
-                <td>1982</td>
-                <td>13</td>
-                <td>46528184</td>
-            </tr>
-            <tr>
-                <td>Radiohead</td>
-                <td>Рок</td>
-                <td>Великобритания</td>
-                <td>1985</td>
-                <td>9</td>
-                <td>46802108</td>
-            </tr>
-            <tr>
-                <td>Weezer</td>
-                <td>Рок</td>
-                <td>США</td>
-                <td>1992</td>
-                <td>15</td>
-                <td>21714890</td>
-            </tr>
-            <tr>
-                <td>Nirvana</td>
-                <td>Рок</td>
-                <td>США</td>
-                <td>1987</td>
-                <td>3</td>
-                <td>39270486</td>
-            </tr>
-            <tr>
-                <td>Dominic Fike</td>
-                <td>Поп</td>
-                <td>США</td>
-                <td>2017</td>
-                <td>3</td>
-                <td>47069298</td>
-            </tr>
-            <tr>
-                <td>Childish Gambino</td>
-                <td>Хип-хоп</td>
-                <td>США</td>
-                <td>2008</td>
-                <td>8</td>
-                <td>32973096</td>
-            </tr>
-            <tr>
-                <td>Tyler, The Creator</td>
-                <td>Хип-хоп</td>
-                <td>США</td>
-                <td>2007</td>
-                <td>9</td>
-                <td>37446332</td>
-            </tr>
-            <tr>
-                <td>Frank Ocean</td>
-                <td>R&B</td>
-                <td>США</td>
-                <td>2011</td>
-                <td>3</td>
-                <td>38509424</td>
-            </tr>
-            <tr>
-                <td>Lauv</td>
-                <td>Поп</td>
-                <td>США</td>
-                <td>2015</td>
-                <td>2</td>
-                <td>19082231</td>
-            </tr>
-            <tr>
-                <td>beabadoobee</td>
-                <td>Рок</td>
-                <td>Великобритания</td>
-                <td>2017</td>
-                <td>3</td>
-                <td>25674205</td>
-            </tr>
-            <tr>
-                <td>KANA-BOON</td>
-                <td>Рок</td>
-                <td>Япония</td>
-                <td>2006</td>
-                <td>10</td>
-                <td>3206366</td>
-            </tr>
-            <tr>
-                <td>FLOW</td>
-                <td>Рок</td>
-                <td>Япония</td>
-                <td>1998</td>
-                <td>26</td>
-                <td>2037525</td>
-            </tr>
-            <tr>
-                <td>Odetari</td>
-                <td>Электронная музыка</td>
-                <td>США</td>
-                <td>2023</td>
-                <td>4</td>
-                <td>7252707</td>
-            </tr>
-            <tr>
-                <td>ABBA</td>
-                <td>Поп</td>
-                <td>Швеция</td>
-                <td>1972</td>
-                <td>9</td>
-                <td>42178321</td>
-            </tr>
-            <tr>
-                <td>Måneskin</td>
-                <td>Рок</td>
-                <td>Италия</td>
-                <td>2016</td>
-                <td>3</td>
-                <td>23121998</td>
-            </tr>
-            <tr>
-                <td>Gorillaz</td>
-                <td>Электронная музыка</td>
-                <td>Великобритания</td>
-                <td>1998</td>
-                <td>10</td>
-                <td>37758224</td>
-            </tr>
-            <tr>
-                <td>Videoclub</td>
-                <td>Поп</td>
-                <td>Франция</td>
-                <td>2018</td>
-                <td>1</td>
-                <td>7535653</td>
-            </tr>
-            <tr>
-                <td>Stromae</td>
-                <td>Электронная музыка</td>
-                <td>Бельгия</td>
-                <td>2005</td>
-                <td>3</td>
-                <td>18419693</td>
-            </tr>
-            <tr>
-                <td>Indila</td>
-                <td>Поп</td>
-                <td>Франция</td>
-                <td>2009</td>
-                <td>1</td>
-                <td>14443326</td>
-            </tr>
-            <tr>
-                <td>Metro Boomin</td>
-                <td>Хип-хоп</td>
-                <td>США</td>
-                <td>2009</td>
-                <td>18</td>
-                <td>43172865</td>
-            </tr>
-            <tr>
-                <td>The Marías</td>
-                <td>Поп</td>
-                <td>США</td>
-                <td>2016</td>
-                <td>2</td>
-                <td>33473944</td>
-            </tr>
-            <tr>
-                <td>Звери</td>
-                <td>Рок</td>
-                <td>Россия</td>
-                <td>2001</td>
-                <td>10</td>
-                <td>375337</td>
-            </tr>
-            <tr>
-                <td>Coldplay</td>
-                <td>Рок</td>
-                <td>Великобритания</td>
-                <td>1997</td>
-                <td>10</td>
-                <td>94535469</td>
-            </tr>
-            <tr>
-                <td>Vaundy</td>
-                <td>Поп</td>
-                <td>Япония</td>
-                <td>2019</td>
-                <td>2</td>
-                <td>6227286</td>
-            </tr>
-            <tr>
-                <td>Перемотка</td>
-                <td>Рок</td>
-                <td>Россия</td>
-                <td>2016</td>
-                <td>6</td>
-                <td>388579</td>
-            </tr>
-            <tr>
-                <td>SQWOZ BAB</td>
-                <td>Хип-хоп</td>
-                <td>Россия</td>
-                <td>2016</td>
-                <td>11</td>
-                <td>553804</td>
-            </tr>
-            <tr>
-                <td>DEAD BLONDE</td>
-                <td>Электронная музыка</td>
-                <td>Россия</td>
-                <td>2020</td>
-                <td>5</td>
-                <td>639173</td>
-            </tr>
-            <tr>
-                <td>t.A.T.u.</td>
-                <td>Поп</td>
-                <td>Россия</td>
-                <td>1999</td>
-                <td>8</td>
-                <td>11589394</td>
-            </tr>
+                <tr>
+                    <td>Chappell Roan</td>
+                    <td>Поп</td>
+                    <td>США</td>
+                    <td>2017</td>
+                    <td>1</td>
+                    <td>31466139</td>
+                </tr>
+                <tr>
+                    <td>PinkPantheress</td>
+                    <td>Электронная музыка</td>
+                    <td>Великобритания</td>
+                    <td>2021</td>
+                    <td>6</td>
+                    <td>31492623</td>
+                </tr>
+                <tr>
+                    <td>TV Girl</td>
+                    <td>Поп</td>
+                    <td>США</td>
+                    <td>2010</td>
+                    <td>5</td>
+                    <td>25544765</td>
+                </tr>
+                <tr>
+                    <td>Tame Impala</td>
+                    <td>Рок</td>
+                    <td>Австралия</td>
+                    <td>2007</td>
+                    <td>5</td>
+                    <td>60614071</td>
+                </tr>
+                <tr>
+                    <td>Bon Jovi</td>
+                    <td>Рок</td>
+                    <td>США</td>
+                    <td>1983</td>
+                    <td>16</td>
+                    <td>36276846</td>
+                </tr>
+                <tr>
+                    <td>Billy Joel</td>
+                    <td>Поп</td>
+                    <td>США</td>
+                    <td>1971</td>
+                    <td>13</td>
+                    <td>34085331</td>
+                </tr>
+                <tr>
+                    <td>Kendrick Lamar</td>
+                    <td>Хип-хоп</td>
+                    <td>США</td>
+                    <td>2003</td>
+                    <td>11</td>
+                    <td>70651187</td>
+                </tr>
+                <tr>
+                    <td>Сергей Лазарев</td>
+                    <td>Поп</td>
+                    <td>Россия</td>
+                    <td>2000</td>
+                    <td>12</td>
+                    <td>422556</td>
+                </tr>
+                <tr>
+                    <td>Дима Билан</td>
+                    <td>Поп</td>
+                    <td>Россия</td>
+                    <td>2000</td>
+                    <td>12</td>
+                    <td>706295</td>
+                </tr>
+                <tr>
+                    <td>aespa</td>
+                    <td>Поп</td>
+                    <td>Южная Корея</td>
+                    <td>2020</td>
+                    <td>2</td>
+                    <td>10611217</td>
+                </tr>
+                <tr>
+                    <td>TWICE</td>
+                    <td>Поп</td>
+                    <td>Южная Корея</td>
+                    <td>2015</td>
+                    <td>10</td>
+                    <td>14848813</td>
+                </tr>
+                <tr>
+                    <td>Gesaffelstein</td>
+                    <td>Электронная музыка</td>
+                    <td>Франция</td>
+                    <td>2008</td>
+                    <td>3</td>
+                    <td>14348436</td>
+                </tr>
+                <tr>
+                    <td>Olivia Rodrigo</td>
+                    <td>Поп</td>
+                    <td>США</td>
+                    <td>2021</td>
+                    <td>3</td>
+                    <td>67530037</td>
+                </tr>
+                <tr>
+                    <td>Градусы</td>
+                    <td>Поп</td>
+                    <td>Россия</td>
+                    <td>2008</td>
+                    <td>3</td>
+                    <td>751303</td>
+                </tr>
+                <tr>
+                    <td>IOWA</td>
+                    <td>Поп</td>
+                    <td>Беларусь</td>
+                    <td>2009</td>
+                    <td>2</td>
+                    <td>796549</td>
+                </tr>
+                <tr>
+                    <td>Green Apelsin</td>
+                    <td>Поп</td>
+                    <td>Россия</td>
+                    <td>2020</td>
+                    <td>2</td>
+                    <td>111809</td>
+                </tr>
+                <tr>
+                    <td>Король и Шут</td>
+                    <td>Рок</td>
+                    <td>Россия</td>
+                    <td>1988</td>
+                    <td>12</td>
+                    <td>541758</td>
+                </tr>
+                <tr>
+                    <td>SALUKI</td>
+                    <td>Хип-хоп</td>
+                    <td>Россия</td>
+                    <td>2013</td>
+                    <td>5</td>
+                    <td>481036</td>
+                </tr>
+                <tr>
+                    <td>Сироткин</td>
+                    <td>Рок</td>
+                    <td>Россия</td>
+                    <td>2015</td>
+                    <td>2</td>
+                    <td>939126</td>
+                </tr>
+                <tr>
+                    <td>Zoloto</td>
+                    <td>Поп</td>
+                    <td>Россия</td>
+                    <td>2016</td>
+                    <td>6</td>
+                    <td>230647</td>
+                </tr>
+                <tr>
+                    <td>Где Фантом?</td>
+                    <td>Рок</td>
+                    <td>Россия</td>
+                    <td>2019</td>
+                    <td>3</td>
+                    <td>287273</td>
+                </tr>
+                <tr>
+                    <td>Red Hot Chili Peppers</td>
+                    <td>Рок</td>
+                    <td>США</td>
+                    <td>1982</td>
+                    <td>13</td>
+                    <td>46528184</td>
+                </tr>
+                <tr>
+                    <td>Radiohead</td>
+                    <td>Рок</td>
+                    <td>Великобритания</td>
+                    <td>1985</td>
+                    <td>9</td>
+                    <td>46802108</td>
+                </tr>
+                <tr>
+                    <td>Weezer</td>
+                    <td>Рок</td>
+                    <td>США</td>
+                    <td>1992</td>
+                    <td>15</td>
+                    <td>21714890</td>
+                </tr>
+                <tr>
+                    <td>Nirvana</td>
+                    <td>Рок</td>
+                    <td>США</td>
+                    <td>1987</td>
+                    <td>3</td>
+                    <td>39270486</td>
+                </tr>
+                <tr>
+                    <td>Dominic Fike</td>
+                    <td>Поп</td>
+                    <td>США</td>
+                    <td>2017</td>
+                    <td>3</td>
+                    <td>47069298</td>
+                </tr>
+                <tr>
+                    <td>Childish Gambino</td>
+                    <td>Хип-хоп</td>
+                    <td>США</td>
+                    <td>2008</td>
+                    <td>8</td>
+                    <td>32973096</td>
+                </tr>
+                <tr>
+                    <td>Tyler, The Creator</td>
+                    <td>Хип-хоп</td>
+                    <td>США</td>
+                    <td>2007</td>
+                    <td>9</td>
+                    <td>37446332</td>
+                </tr>
+                <tr>
+                    <td>Frank Ocean</td>
+                    <td>R&B</td>
+                    <td>США</td>
+                    <td>2011</td>
+                    <td>3</td>
+                    <td>38509424</td>
+                </tr>
+                <tr>
+                    <td>Lauv</td>
+                    <td>Поп</td>
+                    <td>США</td>
+                    <td>2015</td>
+                    <td>2</td>
+                    <td>19082231</td>
+                </tr>
+                <tr>
+                    <td>beabadoobee</td>
+                    <td>Рок</td>
+                    <td>Великобритания</td>
+                    <td>2017</td>
+                    <td>3</td>
+                    <td>25674205</td>
+                </tr>
+                <tr>
+                    <td>KANA-BOON</td>
+                    <td>Рок</td>
+                    <td>Япония</td>
+                    <td>2006</td>
+                    <td>10</td>
+                    <td>3206366</td>
+                </tr>
+                <tr>
+                    <td>FLOW</td>
+                    <td>Рок</td>
+                    <td>Япония</td>
+                    <td>1998</td>
+                    <td>26</td>
+                    <td>2037525</td>
+                </tr>
+                <tr>
+                    <td>Odetari</td>
+                    <td>Электронная музыка</td>
+                    <td>США</td>
+                    <td>2023</td>
+                    <td>4</td>
+                    <td>7252707</td>
+                </tr>
+                <tr>
+                    <td>ABBA</td>
+                    <td>Поп</td>
+                    <td>Швеция</td>
+                    <td>1972</td>
+                    <td>9</td>
+                    <td>42178321</td>
+                </tr>
+                <tr>
+                    <td>Måneskin</td>
+                    <td>Рок</td>
+                    <td>Италия</td>
+                    <td>2016</td>
+                    <td>3</td>
+                    <td>23121998</td>
+                </tr>
+                <tr>
+                    <td>Gorillaz</td>
+                    <td>Электронная музыка</td>
+                    <td>Великобритания</td>
+                    <td>1998</td>
+                    <td>10</td>
+                    <td>37758224</td>
+                </tr>
+                <tr>
+                    <td>Videoclub</td>
+                    <td>Поп</td>
+                    <td>Франция</td>
+                    <td>2018</td>
+                    <td>1</td>
+                    <td>7535653</td>
+                </tr>
+                <tr>
+                    <td>Stromae</td>
+                    <td>Электронная музыка</td>
+                    <td>Бельгия</td>
+                    <td>2005</td>
+                    <td>3</td>
+                    <td>18419693</td>
+                </tr>
+                <tr>
+                    <td>Indila</td>
+                    <td>Поп</td>
+                    <td>Франция</td>
+                    <td>2009</td>
+                    <td>1</td>
+                    <td>14443326</td>
+                </tr>
+                <tr>
+                    <td>Metro Boomin</td>
+                    <td>Хип-хоп</td>
+                    <td>США</td>
+                    <td>2009</td>
+                    <td>18</td>
+                    <td>43172865</td>
+                </tr>
+                <tr>
+                    <td>The Marías</td>
+                    <td>Поп</td>
+                    <td>США</td>
+                    <td>2016</td>
+                    <td>2</td>
+                    <td>33473944</td>
+                </tr>
+                <tr>
+                    <td>Звери</td>
+                    <td>Рок</td>
+                    <td>Россия</td>
+                    <td>2001</td>
+                    <td>10</td>
+                    <td>375337</td>
+                </tr>
+                <tr>
+                    <td>Coldplay</td>
+                    <td>Рок</td>
+                    <td>Великобритания</td>
+                    <td>1997</td>
+                    <td>10</td>
+                    <td>94535469</td>
+                </tr>
+                <tr>
+                    <td>Vaundy</td>
+                    <td>Поп</td>
+                    <td>Япония</td>
+                    <td>2019</td>
+                    <td>2</td>
+                    <td>6227286</td>
+                </tr>
+                <tr>
+                    <td>Перемотка</td>
+                    <td>Рок</td>
+                    <td>Россия</td>
+                    <td>2016</td>
+                    <td>6</td>
+                    <td>388579</td>
+                </tr>
+                <tr>
+                    <td>SQWOZ BAB</td>
+                    <td>Хип-хоп</td>
+                    <td>Россия</td>
+                    <td>2016</td>
+                    <td>11</td>
+                    <td>553804</td>
+                </tr>
+                <tr>
+                    <td>DEAD BLONDE</td>
+                    <td>Электронная музыка</td>
+                    <td>Россия</td>
+                    <td>2020</td>
+                    <td>5</td>
+                    <td>639173</td>
+                </tr>
+                <tr>
+                    <td>t.A.T.u.</td>
+                    <td>Поп</td>
+                    <td>Россия</td>
+                    <td>1999</td>
+                    <td>8</td>
+                    <td>11589394</td>
+                </tr>
+            </tbody>
         </table>
 
         <footer>
