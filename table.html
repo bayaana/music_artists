@@ -17,7 +17,7 @@
 
             <form>
                 <h4>Значения по оси OX</h4>
-
+    
                 <input type="radio" name="ox" id="ox_genre" value="genre">Жанр<br>
                 <input type="radio" name="ox" id="ox_country" value="country">Страна<br>
                 <input type="radio" name="ox" id="ox_year" value="year">Год начала карьеры
@@ -33,12 +33,13 @@
             </form>
 
             <p>
-                <input type="submit" value="Построить">
+                <form>
+                    <input type="submit" value="Построить">
+                </form>
             </p>
-            <p>
-                Здесь будет график
-            </p>
-
+            
+            Здесь будет график
+            
         </details>
 
         <br>
@@ -48,27 +49,50 @@
 
             <form>
                 <p>
-                    Исполнитель: <input type="text">
+                    <label>Исполнитель: 
+                        <input type="text" name="artist" id="artist">
+                    </label>
                 </p>
                 <p>
-                    Жанр: <input type="text">
+                    <label>Жанр:
+                        <input type="text" name="genre" id="genre">
+                    </label>
                 </p>
                 <p>
-                    Страна: <input type="text">
+                    <label>Страна:
+                        <input type="text" name="country" id="country">
+                    </label>
                 </p>
                 <p>
-                    Год начала карьеры: от <input type="text"> до <input type="text">
+                    <label>Год начала карьеры: от
+                        <input type="number" min="1900"> 
+                    </label>
+                    <label>до
+                        <input type="number" max="2026">
+                    </label>
                 </p>
                 <p>
-                    Количество альбомов: от <input type="text"> до <input type="text">
+                    <label>Количество альбомов: от
+                        <input type="number" min="0">
+                    </label>
+                    <label>до
+                        <input type="number" max="99">
+                    </label>
                 </p>
                 <p>
-                    Слушателей в месяц: от <input type="text"> до <input type="text">
+                    <label>Слушателей в месяц: от
+                        <input type="number" min="0">
+                    </label>
+                    <label>до
+                        <input type="number" max="9999999999">
+                    </label>
                 </p>
             </form>
 
             <p>
-                <input type="submit" value="Найти">
+                <form>
+                    <input type="submit" value="Найти">
+                </form>
             </p>
         </details>
 
@@ -78,56 +102,64 @@
             <summary>Сортировка</summary>
 
             <p>
-                Первый уровень: 
-
-                <select name="filter">
-                    <option value="0">Нет</option>
-                    <option value="1">Исполнитель</option>
-                    <option value="2">Жанр</option>
-                    <option value="3">Страна</option>
-                    <option value="4">Год начала карьеры</option>
-                    <option value="5">Количество альбомов</option>
-                    <option value="6">Слушателей в месяц</option>
-                </select>
-
-                по убыванию?
-                <input type="checkbox" name="decrease" value="1">
+                <form>
+                    <label>Первый уровень:
+                        <select name="filter">
+                            <option value="0">Нет</option>
+                            <option value="1">Исполнитель</option>
+                            <option value="2">Жанр</option>
+                            <option value="3">Страна</option>
+                            <option value="4">Год начала карьеры</option>
+                            <option value="5">Количество альбомов</option>
+                            <option value="6">Слушателей в месяц</option>
+                        </select>
+                    </label>
+                    <label>по убыванию?
+                        <input type="checkbox" name="decrease" value="7">
+                    </label>
+                </form>
             </p>
             <p>
-                Второй уровень: 
-
-                <select name="filter">
-                    <option value="0">Нет</option>
-                    <option value="1">Исполнитель</option>
-                    <option value="2">Жанр</option>
-                    <option value="3">Страна</option>
-                    <option value="4">Год начала карьеры</option>
-                    <option value="5">Количество альбомов</option>
-                    <option value="6">Слушателей в месяц</option>
-                </select>
-
-                по убыванию?
-                <input type="checkbox" name="decrease" value="1">
+                <form>
+                    <label>Второй уровень:
+                        <select name="filter">
+                            <option value="0">Нет</option>
+                            <option value="1">Исполнитель</option>
+                            <option value="2">Жанр</option>
+                            <option value="3">Страна</option>
+                            <option value="4">Год начала карьеры</option>
+                            <option value="5">Количество альбомов</option>
+                            <option value="6">Слушателей в месяц</option>
+                        </select>
+                    </label>
+                    <label>по убыванию?
+                        <input type="checkbox" name="decrease" value="7">
+                    </label>
+                </form>
             </p>
             <p>
-                Третий уровень: 
-
-                <select name="filter">
-                    <option value="0">Нет</option>
-                    <option value="1">Исполнитель</option>
-                    <option value="2">Жанр</option>
-                    <option value="3">Страна</option>
-                    <option value="4">Год начала карьеры</option>
-                    <option value="5">Количество альбомов</option>
-                    <option value="6">Слушателей в месяц</option>
-                </select>
-
-                по убыванию?
-                <input type="checkbox" name="decrease" value="1">
+                <form>
+                    <label>Третий уровень:
+                        <select name="filter">
+                            <option value="0">Нет</option>
+                            <option value="1">Исполнитель</option>
+                            <option value="2">Жанр</option>
+                            <option value="3">Страна</option>
+                            <option value="4">Год начала карьеры</option>
+                            <option value="5">Количество альбомов</option>
+                            <option value="6">Слушателей в месяц</option>
+                        </select>
+                    </label>
+                    <label>по убыванию?
+                        <input type="checkbox" name="decrease" value="7">
+                    </label>
+                </form>
             </p>
 
             <p>
-                <input type="submit" value="Сортировать">
+                <form>
+                    <input type="submit" value="Сортировать">
+                </form>
             </p>
         </details>
 
