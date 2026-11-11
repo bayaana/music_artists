@@ -1,0 +1,48 @@
+#menu {
+    text-align: left;
+    background-color: #333333;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    display: inline-block;
+    border-right: solid thin white;
+}
+
+#menu a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+#menu .active {
+    background-color: green;
+}
+
+.gallery {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.gallery-left {
+    display: inline-block;
+    width: 66.66%;
+    
+}
+
+.gallery-right {
+    display: inline-block;
+    width: 33.33%;
+    
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+}
