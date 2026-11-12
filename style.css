@@ -1,12 +1,18 @@
+body {
+  font-size: 1vw;
+  margin: 0.5em;
+  line-height: 1.2;
+}
+
 #menu {
-    text-align: left;
+    display: block;
     background-color: #333333;
 }
 
 #menu ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 #menu li {
@@ -18,7 +24,7 @@
     display: block;
     text-decoration: none;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 
 #menu .active {
@@ -26,23 +32,138 @@
 }
 
 .gallery {
-    width: 80%;
-    margin: 10px auto;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.gallery-left,
+.gallery-right {
+  display: inline-block;
+  height: 100%;
 }
 
 .gallery-left {
-    display: inline-block;
-    width: 66.66%;
-    
+  width: 66.66%;
 }
 
 .gallery-right {
-    display: inline-block;
-    width: 33.33%;
-    
+  width: 33.33%;
+}
+
+.gallery-left .gallery-item {
+  height: 50%;
+}
+
+.gallery-right .gallery-item {
+  height: 25%;
+}
+
+.tall {
+  height: 50%;
 }
 
 .gallery img {
-    display: block;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#content {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.content-one {
+    float: left;
+    width: 20%;
+}
+
+.content-two {
+    float: left;
+    width: 60%;
+}
+
+.content-two .column-inner {
+    border-left: solid thin lightgray;
+    border-right: solid thin lightgray;
+}
+
+.content-three {
+    float: left;
+    width: 20%;
+}
+
+
+.artist-card {
+    margin: 10px;
+}
+
+.artist-description {
+    display: inline-block;
+    width: 50%;
+}
+.artist-description h4 {
+    text-align: right;
+}
+
+.artist-description p {
+    text-align: justify;
+}
+
+.artist-image {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+.artist-photo {
     width: 100%;
+}
+
+.article-text {
+    display: inline-block;
+    text-align: justify;
+    width: 25%;
+    vertical-align: top;
+}
+
+.main-article, .music-overview  {
+    padding: 0 10px;
+}
+
+.main-article h4, .music-overview h4 {
+  text-align: center;
+}
+
+.music-overview p {
+    text-align: justify;
+}
+
+#content a {
+    display: block;
+    color: rgb(213, 124, 35);
+    text-align: right;
+}
+
+.content-three .artist-description h4 {
+    text-align: left;
+} 
+
+.artist-description h4,
+.artist-description p,
+.artist-description a {
+  margin-right: 10px;
+}
+
+.content-three .artist-description h4,
+.content-three .artist-description p,
+.content-three .artist-description a {
+  margin-left: 10px;
+}
+
+.article-text p,
+.article-text a {
+  margin-left: 10px;
+  margin-right: 10px;
 }
