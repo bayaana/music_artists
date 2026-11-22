@@ -1,10 +1,48 @@
 body {
-  font-size: 1vw;
-  margin: 0.5em;
-  line-height: 1.2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-#menu {
+header {
+    width: 100%;
+    text-align: right;
+}
+
+header h4 {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+header .active {
+    background: rgb(43, 177, 249);
+    border-radius: 4px 4px 0 0;
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: rgb(43, 177, 249);
+    justify-content: flex-start;
+}
+
+nav p {
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* #menu {
     display: block;
     background-color: #333333;
 }
@@ -166,4 +204,4 @@ body {
 .article-text a {
   margin-left: 10px;
   margin-right: 10px;
-}
+} */
