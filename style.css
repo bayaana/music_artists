@@ -5,14 +5,19 @@ body {
 }
 
 header {
+    display: flex;
     width: 100%;
-    text-align: right;
+    justify-content: flex-end;
+    @media (max-width: 600px) {
+        flex-wrap: wrap;
+    }
 }
 
 header h4 {
-    display: inline-block;
     margin: 5px 0;
-    padding: 0;
+    @media (max-width: 600px) {
+        width: 50%;
+    }
 }
 
 header a {
@@ -27,19 +32,18 @@ header .active {
     color: white;
 }
 
-nav {
-    display: flex;
-    flex-wrap: wrap;
+.slogan {
     width: 100%;
     background: rgb(43, 177, 249);
-    justify-content: flex-start;
-}
-
-nav p {
     color: white;
     font-weight: bold;
-    margin: 5px;
-    padding: 5px;
+    padding: 10px;
+}
+
+@madia (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
 }
 
 /* #menu {
