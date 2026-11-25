@@ -88,15 +88,15 @@ header .active {
 .artist-card {
     border: solid thin lightblue;
     text-align: center;
-    padding: 5px
-}
+    padding: 5px;
 
-.artist-card h5, .artist-card p {
-    margin: 0;
-}
+    a {
+        color: black;
+    }
 
-.artist-card a {
-    color: black;
+    h5, p {
+        margin: 0;
+    }
 }
 
 .artist-card img {
@@ -130,5 +130,21 @@ header .active {
 .main-article {
     grid-area: 2 / 2 / 4 / 7;
     background-color: lightblue;
-    border-radius: 12px;
+    border-radius: 24px;
+    text-align: center;
+    padding: 10px;
+
+    a {
+        display: block;
+        text-align: left;
+        color: black;
+    }
+
+    p {
+        width: 80%;
+    }
+
+    img {
+        width: 90%;
+    }
 }
