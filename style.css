@@ -86,7 +86,7 @@ header .active {
     display: grid;
     width: 90%;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 1fr, 2fr, 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 5px;
 
@@ -94,6 +94,17 @@ header .active {
 
 .artist-card {
     border: solid thin lightblue;
+    text-align: center;
+    line-height: 0;
+    padding: 5px
+}
+
+.artist-card a {
+    color: black;
+}
+
+.artist-card img {
+    width: 80px;
 }
 
 .card1 {
@@ -122,6 +133,8 @@ header .active {
 
 .main-article {
     grid-area: 2 / 2 / 4 / 7;
+    background-color: lightblue;
+    border-radius: 12px;
 }
 
 /* 
