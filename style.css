@@ -82,43 +82,51 @@ header .active {
     grid-column: 3;
 }
 
-/* .gallery-left,
-.gallery-right {
-  display: inline-block;
-  height: 100%;
-}
-
-.gallery-left {
-  width: 66.66%;
-}
-
-.gallery-right {
-  width: 33.33%;
-}
-
-.gallery-left .gallery-item {
-  height: 50%;
-}
-
-.gallery-right .gallery-item {
-  height: 25%;
-}
-
-.tall {
-  height: 50%;
-}
-
-.gallery img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
 #content {
+    display: grid;
     width: 90%;
-    margin: auto;
-    overflow: hidden;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr, 2fr, 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+
+}   
+
+.artist-card {
+    border: solid thin lightblue;
 }
+
+.card1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.card2 {
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+.card3 {
+    grid-area: 1 / 5 / 2 / 7;
+}
+
+.card4 {
+    grid-area: 1 / 7 / 2 / 8;
+}
+
+.card5 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.card6 {
+    grid-area: 3 / 7 / 4 / 8;
+}
+
+.main-article {
+    grid-area: 2 / 2 / 4 / 7;
+}
+
+/* 
+
+
 
 .content-one {
     float: left;
