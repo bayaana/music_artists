@@ -44,7 +44,7 @@ header {
     grid-gap: 5px;
     width: 90%;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 120px);
     margin: 10px auto;
 
     @media (max-width: 600px) {
@@ -82,11 +82,15 @@ header {
     display: grid;
     width: 80%;
     margin: 0 auto;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 5px;
 
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .artist-card {
@@ -104,24 +108,24 @@ header {
     }
 
     img {
-        width: 80px;
+        width: 120px;
     }
 }
 
-.artist-card .card1 {
+.card1 {
     grid-area: 1 / 1 / 2 / 2;
 }
 
 .card2 {
-    grid-area: 1 / 2 / 2 / 4;
+    grid-area: 1 / 2 / 2 / 3;
 }
 
 .card3 {
-    grid-area: 1 / 5 / 2 / 7;
+    grid-area: 1 / 4 / 2 / 5;
 }
 
 .card4 {
-    grid-area: 1 / 7 / 2 / 8;
+    grid-area: 1 / 5 / 2 / 6;
 }
 
 .card5 {
@@ -129,11 +133,11 @@ header {
 }
 
 .card6 {
-    grid-area: 3 / 7 / 4 / 8;
+    grid-area: 3 / 5 / 4 / 6;
 }
 
 .main-article {
-    grid-area: 2 / 2 / 4 / 7;
+    grid-area: 2 / 2 / 4 / 5;
     background-color: lightblue;
     border-radius: 24px;
     text-align: center;
@@ -153,5 +157,6 @@ header {
     img {
         width: 95%;
         border-radius: 24px;
+        height: 20%;
     }
 }
