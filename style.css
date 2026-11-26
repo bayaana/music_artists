@@ -108,7 +108,11 @@ header {
     }
 
     img {
-        width: 100px;
+        width: 7vw;
+
+        @media (max-width: 700px) {
+            width: 20vw;
+        }
     }
 }
 
